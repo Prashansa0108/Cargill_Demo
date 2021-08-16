@@ -65,4 +65,11 @@ resource "aws_security_group" "allow_ssh" {
 resource "aws_codecommit_repository" "demo-repo" {
   repository_name = "MyDemoRepository"
   description     = "This is the Demo App Repository"
+
+  tags = {
+    Owner       = "DevOps Team"
+    Environment = "Dev"
+    Terraform   = true
+  }
+
 }
