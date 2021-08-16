@@ -22,6 +22,8 @@ COPY --from=build /app/build /usr/share/nginx/html
 
 VOLUME /usr/share/nginx/html
 
+ENTRYPOINT bash run-docker.sh
+
 CMD ["nginx", "-g", "daemon off;"]
 
 EXPOSE 80

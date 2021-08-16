@@ -23,3 +23,4 @@ I just created the simple application to print "Cargill Demo" in the browser bec
 For deployment part we can use CodeCommit, I didn't get much time to implement that part. 
 We can push our code to CodeCommit and write a CFT to create CodePipeline, once created, we can do release change. (Build tool will also be required to make the application work)
 
+We can create another terraform to create IAM_Role, CodeDeploy in order to create CI/CD pipeline.
