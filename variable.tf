@@ -3,7 +3,7 @@ variable "aws_region" {
 }
 
 variable "ami" {
-  default = "ami-0801628222e2e96d6"
+  default = "XXXXXXXXXXX"
 }
 
 variable "key_name" {
